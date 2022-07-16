@@ -2,6 +2,11 @@ import { createWebHistory, createRouter } from "vue-router";
 import Home from "./components/Home.vue";
 import Login from "./components/Login.vue";
 import Register from "./components/Register.vue";
+import RoleSelection from "./components/RoleSelection.vue";
+import EmailConfirmation from "./components/EmailConfirmation.vue"
+import OrganizatorSettings from "./components/OrganizatorSettings"
+import Agreement from "./components/Agreement"
+import SuccessPage from "./components/SuccessPage"
 // lazy-loaded
 const Profile = () => import("./components/Profile.vue")
 const BoardAdmin = () => import("./components/BoardAdmin.vue")
@@ -25,6 +30,26 @@ const routes = [
   {
     path: "/register",
     component: Register,
+  },
+  {
+    path: "/role_selection",
+    component: RoleSelection,
+  },
+  {
+    path: "/email_confirmation",
+    component: EmailConfirmation,
+  },
+  {
+    path: "/organizator_settings",
+    component: OrganizatorSettings,
+  },
+  {
+    path: "/agreement",
+    component: Agreement,
+  },
+  {
+    path: "/success_page",
+    component: SuccessPage,
   },
   {
     path: "/profile",

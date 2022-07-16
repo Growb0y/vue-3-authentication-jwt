@@ -1,11 +1,11 @@
 <template>
   <div id="app">
     <nav class="navbar navbar-expand navbar-dark bg-dark">
-      <a href="/" class="navbar-brand">bezKoder</a>
+      <a href="/" class="navbar-brand">М</a>
       <div class="navbar-nav mr-auto">
         <li class="nav-item">
           <router-link to="/home" class="nav-link">
-            <font-awesome-icon icon="home" /> Home
+            <font-awesome-icon icon="home" /> Главная
           </router-link>
         </li>
         <li v-if="showAdminBoard" class="nav-item">
@@ -22,12 +22,37 @@
       <div v-if="!currentUser" class="navbar-nav ml-auto">
         <li class="nav-item">
           <router-link to="/register" class="nav-link">
-            <font-awesome-icon icon="user-plus" /> Sign Up
+            <font-awesome-icon icon="user-plus" /> Регистрация
           </router-link>
         </li>
         <li class="nav-item">
           <router-link to="/login" class="nav-link">
-            <font-awesome-icon icon="sign-in-alt" /> Login
+            <font-awesome-icon icon="sign-in-alt" /> Вход
+          </router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/role_selection" class="nav-link">
+            <font-awesome-icon icon="sign-in-alt" /> выбор роли
+          </router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/organizator_settings" class="nav-link">
+            <font-awesome-icon icon="sign-in-alt" /> рег. орга
+          </router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/email_confirmation" class="nav-link">
+            <font-awesome-icon icon="sign-in-alt" /> письмо отпр!
+          </router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/agreement" class="nav-link">
+            <font-awesome-icon icon="sign-in-alt" /> соглашение
+          </router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/success_page" class="nav-link">
+            <font-awesome-icon icon="sign-in-alt" /> успех
           </router-link>
         </li>
       </div>
